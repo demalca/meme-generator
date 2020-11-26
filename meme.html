@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="meme.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>MEME Generator</h1>
+
+    <form action="">
+      <div class="userinput">
+        <p>Welcome to the Dank Factory! Got MEME?</p>
+      </div>
+
+      <div class="userinput">
+        <label for="image">Image URL:</label>
+        <input type="url" id="image" placeholder="Add image URL" required />
+      </div>
+
+      <div class="userinput">
+        <label for="top">Top text:</label>
+        <input
+          type="text"
+          id="top"
+          name="top"
+          placeholder="Add text at the top of your meme (optional)"
+        />
+      </div>
+
+      <div class="userinput">
+        <label for="bottom">Bottom text:</label>
+        <input
+          type="text"
+          id="bottom"
+          name="bottom"
+          placeholder="Add text at the bottom of your meme (optional)"
+        />
+      </div>
+
+      <div class="userinput">
+        <button type="submit">Create MEME</button>
+      </div>
+    </form>
+
+    <div id="memes"></div>
+    <script src="meme.js"></script>
+  </body>
+</html>
